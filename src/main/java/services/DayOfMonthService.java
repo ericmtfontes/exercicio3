@@ -8,7 +8,7 @@ public class DayOfMonthService {
     public static DayOfMonth minValue(List<DayOfMonth> days){
         DayOfMonth min = days.get(0);
         for(DayOfMonth day : days){
-            if(day.getValor() < min.getValor()){
+            if(day.getValor() > 0 && day.getValor() < min.getValor()){
                 min = day;
             }
         }
