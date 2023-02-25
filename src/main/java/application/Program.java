@@ -140,11 +140,11 @@ public class Program {
 
         // O menor valor de faturamento ocorrido em um dia do mês
         DayOfMonth minDay = DayOfMonthService.minValue(days);
-        System.out.println("O menor valor de faturamento ocorreu no dia: " + minDay.getDia() + " com " + minDay.getValor());
+        System.out.println("O menor valor de faturamento ocorreu no dia: " + minDay.getDia() + " com " + String.format("%.2f", minDay.getValor()));
 
         // O maior valor de faturamento ocorrido em um dia do mês
         DayOfMonth maxDay = DayOfMonthService.maxValue(days);
-        System.out.println("O maior valor de faturamento ocorreu no dia: " + maxDay.getDia() + " com " + maxDay.getValor());
+        System.out.println("O maior valor de faturamento ocorreu no dia: " + maxDay.getDia() + " com " + String.format("%.2f", maxDay.getValor()));
 
         // Número de dias no mês em que o valor de faturamento diário foi superior à média mensal
         double sum = 0.0, media = 0.0;
